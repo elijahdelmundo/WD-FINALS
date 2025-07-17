@@ -5,21 +5,16 @@
 <br />
 <div align="center">
   <a href="https://github.com/elijahdelmundo/">
-  <!-- TODO: If you want to add logo or banner you can add it here -->
     <img src="./assets/img/edm.png" alt="EDM" width="130" height="100">
   </a>
-<!-- TODO: Change Title to the name of the title of your Project -->
   <h3 align="center">WD-FINALS Portfolio</h3>
 </div>
-<!-- TODO: Make a short description -->
 <div align="center">
-  Elijah Del Mundo's Portfolio - Cybersecurity Enthusiast & Web Developer
+  A personal portfolio website showcasing my education, skills, and projects in IT and cybersecurity
 </div>
 
 <br />
 
-<!-- TODO: Change the zyx-0314 into your github username  -->
-<!-- TODO: Change the WD-Template-Project into the same name of your folder -->
 ![](https://visit-counter.vercel.app/counter.png?page=elijahdelmundo/WD-FINALS)
 
 [![wakatime](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8.svg)](https://wakatime.com/badge/user/018dd99a-4985-4f98-8216-6ca6fe2ce0f8/project/63501637-9a31-42f0-960d-4d0ab47977f8)
@@ -29,7 +24,6 @@
 <br />
 <br />
 
-<!-- TODO: If you want to add more layers for your readme -->
 <details>
   <summary>Table of Contents</summary>
   <ol>
@@ -57,25 +51,22 @@
 
 ## Overview
 
-<!-- TODO: To be changed -->
-<!-- The following are just sample -->
-Description of the project in details.
+This project is a multi-page personal portfolio website designed to showcase my skills, education, and projects in the field of Information Technology with a focus on cybersecurity. The site features responsive design, clean navigation, and organized sections for about me, education background, project showcase, and contact information.
 
 Guiding Question:
-- What is the project
-- Whats the purpose
-- What are key components
-- What technology used and how it is used
+- What is the project: A personal portfolio website for academic and professional presentation
+- What's the purpose: To showcase my skills, education, and projects to potential employers or collaborators
+- What are key components: About page, Education page, Projects showcase, and Contact form
+- What technology used: HTML5, CSS3, and responsive design techniques
 
 ### Key Components
-<!-- TODO: List of Key Components -->
-<!-- The following are just sample -->
-- MultiPage Website/Single Page Website
-- Parallax transition
-- Transactional
+- Multi-Page Website with 5 pages (Home, About, Education, Projects, Contact)
+- Responsive navigation system
+- Project showcase with GitHub repository links
+- Contact form and information
+- Certification display
 
 ### Technology
-<!-- TODO: List of Technology Used -->
 ![HTML](https://img.shields.io/badge/HTML-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white)
@@ -92,31 +83,35 @@ Guiding Question:
 7. File Structure to follow below.
 
 ```
-WD-ProjectName
+WD-FINALS
 └─ assets
-|   └─ css
-|   |   └─ style.css
 |   └─ img
-|   |   └─ fileWith.jpeg/.jpg/.webp/.png
-|   └─ js
-|       └─ script.js
+|       └─ edm.png
+|       └─ project1.PNG
+|       └─ project2.PNG
+|       └─ certiport-logo.png
 └─ pages
-|  └─ pageName
-|     └─ assets
-|     |  └─ css
-|     |  |  └─ style.css
-|     |  └─ img
-|     |  |  └─ fileWith.jpeg/.jpg/.webp/.png
-|     |  └─ js
-|     |     └─ script.js
+|  └─ page1 (About)
 |     └─ index.html
+|     └─ style.css
+|  └─ page2 (Education)
+|     └─ index.html
+|     └─ style.css
+|  └─ page3 (Projects)
+|     └─ index.html
+|     └─ style.css
+|  └─ page4 (Contact)
+|     └─ index.html
+|     └─ style.css
 └─ index.html
+└─ style.css
 └─ readme.md
 ```
 
 ## Resources
 
-<!-- TODO: Add References -->
 | Title | Purpose | Link |
 |-|-|-|
-| Sample Title | Sample purpose would be here like this and this is the example of what it is. | trykolang.com |
+| WD-Seatwork-1 | First project showcased in the portfolio | https://github.com/elijahdelmundo/WD-Seatwork-1 |
+| WD-Seatwork-2 | Second project showcased in the portfolio | https://github.com/elijahdelmundo/WD-Seatwork-2 |
+| Font Awesome | Icons used throughout the website | https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css |
