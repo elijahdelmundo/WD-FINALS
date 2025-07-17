@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #000000, #1a1a1a, #333333, #666666);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    color: #333;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+header {
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 15px 30px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 20px;
+    z-index: 100;
+    backdrop-filter: blur(5px);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(45deg, #000000, #000000);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.brand-name {
+    font-size: 28px;
+    font-weight: 800;
+    background: linear-gradient(45deg, #131212, #5e5b5b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #777;
+    font-weight: 600;
+}
+
+.tagline i {
+    margin-right: 5px;
+    color: #666;
+}
+
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #444;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 8px 15px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+nav ul li a:hover {
+    color: #353433;
+}
+
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: linear-gradient(45deg, #252525, #706f6e);
+    border-radius: 10px;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.cta-button {
+    background: linear-gradient(45deg, #2e2d2d, #706f6f);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(34, 33, 33, 0.3);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(29, 28, 28, 0.4);
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b);
+    color: white;
+    border: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+}
+
+
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.education-section {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 30px;
+    flex: 1;
+    min-width: 300px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+    color: white;
+}
+
+.education-section:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.education-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 15px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 15px;
+}
+
+.education-header i {
+    font-size: 24px;
+    color: #ffdd00;
+    background-color: rgba(255, 221, 0, 0.1);
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.education-header h2 {
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.education-list {
+    list-style: none;
+}
+
+.education-item {
+    padding: 12px 0;
+    text-align: left;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 15px;
+}
+
+.education-item:last-child {
+    border-bottom: none;
+}
+
+.education-item h3 {
+    font-size: 18px;
+    color: #ffdd00;
+    margin-bottom: 8px;
+}
+
+.education-item .institution {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.education-item .year {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.education-item .description {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.6;
+}
+
+
+.certifications-section {
+    text-align: center;
+    margin: 50px 0;
+    width: 100%;
+}
+
+.certifications-section h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 30px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    display: inline-block;
+}
+
+.certifications-section h2:after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: #ffdd00;
+    margin: 15px auto 0;
+}
+
+.certifications-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.certification-card {
+    background: rgba(38, 38, 38, 0.8);
+    border-radius: 16px;
+    padding: 25px;
+    width: 280px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.certification-card:hover {
+    transform: translateY(-8px);
+    background: rgba(38, 38, 38, 0.9);
+}
+
+.certification-card i {
+    font-size: 32px;
+    color: #ffdd00;
+    margin-bottom: 15px;
+}
+
+.certification-card h3 {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.certification-card .issuer {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+}
+
+.certification-card .year {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: italic;
+}
+
+.certification-logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.cert-logo-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+
+.footer {
+    background: linear-gradient(135deg, #5e6061, #202020);
+    color: white;
+    margin-top: 50px;
+    border-radius: 12px;
+    overflow: hidden;
+    padding: 30px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h3 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: white;  
+}
+
+.footer-section h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: white;  
+}
+
+.footer-section p {
+    color: #e0e0e0;  
+    margin-bottom: 10px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    color: #e0e0e0;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ffdd00;  
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #e9e7e7;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ffdd00;  
+}
+
+.footer-section i {
+    width: 20px;
+    margin-right: 10px;
+    color: #ffdd00;  
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1); 
+    color: #e0e0e0;  
+}
+
+
+@media screen and (max-width: 992px) {
+    .education-container {
+        flex-direction: column;
+    }
+    
+    .certifications-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .certification-card {
+        width: 100%;
+        max-width: 320px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .header-container {
+        flex-wrap: wrap;
+    }
+    
+    .desktop-nav {
+        display: none;
+    }
+    
+    .mobile-menu-btn {
+        display: block;
+    }
+}
